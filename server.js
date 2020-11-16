@@ -14,7 +14,7 @@ app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static("./Develop/public"));
 
 // mongoose.connect("mongodb://localhost/budget", {
 //   useNewUrlParser: true,
