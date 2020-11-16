@@ -16,10 +16,15 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-});
+// mongoose.connect("mongodb://localhost/budget", {
+//   useNewUrlParser: true,
+//   useFindAndModify: false,
+// });
+
+const MONGOATLAS_G =
+  process.env.MONGOATLAS_G ||
+  "mongodb+srv://Grantjos12:dbgrantjos12@cluster0.omzjl.mongodb.net/budget?retryWrites=true&w=majority";
+mongoose.connect(MONGOATLAS_G, { useNewUrlParser: true });
 
 // routes
 app.use(require("./routes/api.js"));
