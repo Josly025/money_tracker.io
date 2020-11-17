@@ -1,4 +1,4 @@
-# money_tracker.io### Title **** Money Tracker 
+o### Title **** Money Tracker 
 ## Description ***
     This application allows the user to enter deposite and expenses to their account both thile online and off. A user can input a title for the money transaction along with the relevant monetary value. The graph responses to the change in balance as a visual representation of a user's account activity. Inputs are saved via mongoDB and indexedDB. 
 ## Table of Contents ****
